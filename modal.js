@@ -13,25 +13,29 @@ $('.modal_container').append(`
 
       <!-- to add slider for gallery -->
       <div id="indicatorOfCarousel" class="carousel slide" data-ride="carousel">
-		  <ol class="carousel-indicators">
-		    <li data-target="#indicatorOfCarousel" data-slide-to="0" class="active"></li>
-		    <li data-target="#indicatorOfCarousel" data-slide-to="1"></li>
-		    <li data-target="#indicatorOfCarousel" data-slide-to="2"></li>
+      <ol class="carousel-indicators">
+        <!-- each gallery element for indicator-->
+          <li data-target="#indicatorOfCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#indicatorOfCarousel" data-slide-to="1"></li>
+          <li data-target="#indicatorOfCarousel" data-slide-to="2"></li>
+        <!-- end gallery element for indicator-->
 		  </ol>
-		  <div class="carousel-inner">
+		  <div class="carousel-inner" height="300" style="overflow: hide">
 
-		    <!-- each element of gallery -->
-		    <div class="carousel-item active">
-		      <img class="d-block w-100" src="./1.png" alt="First slide">
-		    </div>
-		    <!-- end element of gallery -->
+		    <!-- each element of gallery for image -->
+          <div class="carousel-item active">
+            <img height="300px" width="100%" class="d-block w-100" src="./1.png" alt="First slide">
+          </div>
+          
+          <div class="carousel-item">
+		        <img height="300px" width="100%" class="d-block w-100" src="./2.png" alt="Second slide">
+          </div>
 
-		    <div class="carousel-item">
-		      <img class="d-block w-100" src="./2.png" alt="Second slide">
-		    </div>
-		    <div class="carousel-item">
-		      <img class="d-block w-100" src="./3.png" alt="Third slide">
-		    </div>
+          <div class="carousel-item">
+		        <img height="300px" width="100%" class="d-block w-100" src="./3.png" alt="Third slide">
+          </div>
+        <!-- end element of gallery for image -->
+        
 		  </div>
 		  <a class="carousel-control-prev" href="#indicatorOfCarousel" role="button" data-slide="prev">
 		    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -43,6 +47,21 @@ $('.modal_container').append(`
 		  </a>
 		</div>
       <!-- end of slider for gallery -->
+
+      <hr>
+      <!-- start commnets list -->
+      <dl class="row">
+      
+        <!-- start commnet view -->
+          <dt class="col-sm-3">first user</dt>
+          <dd class="col-sm-9">comment text, longer text text text text text text text </dd>
+        <!-- start commnet view -->
+
+        <dt class="col-sm-3">second user</dt>
+        <dd class="col-sm-9">comment text, longer text text text text text text text</dd>
+        
+      </dl>
+      <!-- end commnets list -->
 
       <!-- to add a comment -->
         <form>
